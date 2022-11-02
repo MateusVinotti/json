@@ -55,7 +55,7 @@ public class Controller {
     public List<Cliente> listCliente(){
         return repository.findAll();
     }
-
+// dev
     @PutMapping("/atualize/{id}")
     public String updateClineteById(@RequestBody clienteDTO clienteDTO, @PathVariable Long id){
         Optional<Cliente> velhoCliente = repository.findById(id);
